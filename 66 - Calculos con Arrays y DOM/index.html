@@ -8,6 +8,18 @@
 <body>
     <h2>Notas</h2>
     <ul id="listaNotas"></ul>
-    
+    <p id="p"></p>
+    <script>
+        let notas = [60,75,83];
+        let elementoListaNotas = document.getElementById("listaNotas");
+        let suma = 0;
+        for(let nota of notas){
+            let elementoLista = document.createElement("li");
+            elementoLista.innerText = nota;
+            elementoListaNotas.appendChild(elementoLista);
+            suma += nota;
+        }
+            document.createElement("p").textContent = suma/notas.length;        
+    </script>
 </body>
 </html>
