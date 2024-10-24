@@ -21,5 +21,5 @@ function calcularPromedio(){
     let promedio = suma / calificaciones.length;
     let resultado = promedio >= 60 ? "Aprobado":"Reprobado";
 
-    document.getElementById("resultado").textContent = `Proedio: ${promedio.toFixed(2)} -${resultado}`;
+    document.getElementById("resultado").textContent = `Promedio: ${promedio.toFixed(2)} -${resultado}`;
     }

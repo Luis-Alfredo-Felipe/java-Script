@@ -10,6 +10,11 @@ h3{
     color: darkslateblue
 }
 
+ul{
+    list-style: none;
+    padding: 3px;
+}
+
 li{
     font-weight: bolder;
     color: blue
@@ -38,5 +43,15 @@ button:hover{
 .info span {
     font-weight: bolder;
     font-size: large;
-    color: blue;
+    color: rgb(0, 0, 0);
 }
+
+.info h4{
+    font-size: 13px;
+    border: 2px solid black;
+    width: 135px;
+    padding: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: transparent;
+}
+

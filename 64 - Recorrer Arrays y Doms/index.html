@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    ul{
+        list-style: none;
+        padding: 5px; 
+        border: 2px solid;
+        width: 170px;       
+    }
+    
+</style>
 <body>
     <h2>Lista de Compras</h2>
     <ul id="listaCompras"></ul>
@@ -14,7 +23,7 @@
         for(let item of items){
             let itemCompras = document.createElement("li");
             itemCompras.innerText = item;
-            elementoListaCompras.appendChild("itemCompras");
+            elementoListaCompras.appendChild(itemCompras);
         }
     </script>
 </body>

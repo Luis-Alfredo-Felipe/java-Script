@@ -15,7 +15,7 @@ function calcularPromedio(){
         suma += arreglo[i];
     }
     let promedio = (suma/5);
-    document.getElementById("proemdio").textContent=promedio;
+    document.getElementById("promedio").textContent=promedio;
 }
 
 function notaMasAlta(){
