@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Lista de Compras</h2>
+    <ul id="listaCompras"></ul>
+    <script>
+        let items = ["Jabon","Queso","Huevos","Agua","Aceite","Azucar"];        
+        let elementoListaCompras = document.getElementById("listaCompras");
+        for(let item of items){
+            let itemCompras = document.createElement("li");
+            itemCompras.innerText = item;
+            elementoListaCompras.appendChild("itemCompras");
+        }
+    </script>
+</body>
+</html>

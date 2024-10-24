@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arreglos</title>
+</head>
+<body>
+    <h2>Numeros</h2>
+    <ol id="listaNumeros"> </ol>
+    <script>
+        let numeros = [1,6,8];
+        let elementoListaNumeros = document.getElementById("listaNumeros");
+        let elementoLista = document.createElement("li");
+        elementoLista.innerText = numeros[0];
+        elementoListaNumeros.appendChild(elementoLista);
+        let elementoLista2 = document.createElement("li");
+        elementoLista2.innerText = numeros[1];
+        elementoListaNumeros.appendChild(elementoLista2);
+        let elementoLista3 = document.createElement("li");
+        elementoLista3.innerText = numeros[2];
+        elementoListaNumeros.appendChild(elementoLista3);
+    </script>
+</body>
+</html>
