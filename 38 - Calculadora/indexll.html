@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Simplificada</title>
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <form id="calculadora">
+        <input type="number" id="display" readonly />
+
+        <!-- Botones de números -->
+        <div>
+            <button onclick="agregarNumero('1', event)">1</button>
+            <button onclick="agregarNumero('2', event)">2</button>
+            <button onclick="agregarNumero('3', event)">3</button>
+            <button onclick="agregarNumero('4', event)">4</button>
+            <button onclick="agregarNumero('5', event)">5</button>
+            <button onclick="agregarNumero('6', event)">6</button>
+            <button onclick="agregarNumero('7', event)">7</button>
+            <button onclick="agregarNumero('8', event)">8</button>
+            <button onclick="agregarNumero('9', event)">9</button>
+            <button onclick="agregarNumero('0', event)">0</button>
+        </div>
+
+        <!-- Botones de operaciones -->
+        <div>
+            <button onclick="seleccionarOperacion('+', event)">+</button>
+            <button onclick="seleccionarOperacion('-', event)">-</button>
+            <button onclick="seleccionarOperacion('*', event)">x</button>
+            <button onclick="seleccionarOperacion('/', event)">÷</button>
+            <button onclick="calcularResultado(event)">=</button>
+            <button onclick="limpiar(event)">C</button>
+        </div>
+        
+    </form>
+
+    <script>
+        let operacion = ''; // Guarda el operador
+        let valor1 = ''; // Guarda el primer número
+        let valor2 = ''; // Guarda el segundo número
+        let resultado = 0;
+
+        // Función para agregar números al display
+        function agregarNumero(numero, event) {
+            event.preventDefault(); // Previene el comportamiento del botón
+            const display = document.getElementById('display');
+            display.value += numero; // Agrega el número al final del valor actual
+        }
+
+        // Función para seleccionar una operación
+        function seleccionarOperacion(op, event) {
+            event.preventDefault(); // Previene el comportamiento del botón
+            operacion = op;
+            valor1 = document.getElementById('display').value; // Guarda el primer valor
+            document.getElementById('display').value = ''; // Limpia el display para el segundo número
+        }
+
+        // Función para calcular el resultado
+        function calcularResultado(event) {
+            event.preventDefault(); // Previene el comportamiento del botón
+            valor2 = document.getElementById('display').value; // Obtiene el segundo valor
+            if (valor1 && valor2 && operacion) {
+                switch (operacion) {
+                    case '+':
+                        resultado = parseFloat(valor1) + parseFloat(valor2);
+                        break;
+                    case '-':
+                        resultado = parseFloat(valor1) - parseFloat(valor2);
+                        break;
+                    case '*':
+                        resultado = parseFloat(valor1) * parseFloat(valor2);
+                        break;
+                    case '/':
+                        resultado = valor2 !== '0' ? parseFloat(valor1) / parseFloat(valor2) : 'Error';
+                        break;
+                }
+                document.getElementById('display').value = resultado; // Muestra el resultado
+                operacion = ''; // Resetea la operación
+            }
+        }
+
+        // Función para limpiar la calculadora
+        function limpiar(event) {
+            event.preventDefault(); // Previene el comportamiento del botón
+            document.getElementById('display').value = '';
+            valor1 = '';
+            valor2 = '';
+            operacion = '';
+            resultado = 0;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de 5 Preguntas</title>
+</head>
+<body>
+    <h1>Test de Conocimientos</h1>
+    <p id="operacion"></p>
+    <script>
+        let suma = 0;
+        let p1  = prompt("Guatemala es de Oriente");
+        if(p1.toLowerCase()=== "no"){
+            suma++;
+        }
+        let p2 = prompt("Honduras es la capital del Salvador");
+        if(p2.toLowerCase()==="no"){
+            suma++;
+        }
+        let p3 = prompt("Viña del Mar es de Chile");
+        if(p3.toLowerCase()==="si"){
+            suma++;
+        }
+        let p4 = prompt("La Capital de Mexico es el DF");
+        if(p4.toLowerCase()==="si"){
+            suma++;
+        }
+        let p5 = prompt("Venezuela es de Sur America");
+        if(p5.toLowerCase()==="si"){
+            suma++;
+        }
+        document.getElementById("operacion").textContent = "Obtuviste " + suma + " de 5 preguntas correctas.";
+    </script>
+</body>
+</html>

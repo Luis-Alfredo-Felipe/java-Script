@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estructura Condicional Switch</title>
+  </head>
+  <body>
+    <p>Elige un Dia:</p>
+    <ol>
+      <li>Lunes</li>
+      <li>Martes</li>
+      <li>Miercoles</li>
+      <li>Jueves</li>
+      <li>Viernes</li>
+    </ol>
+    <input type="number" id="numDia" min="1" max="5" />
+    <button onclick="ingresoDia()">Dia</button>
+    <h3 id="numeroDia"></h3>
+
+    <script>
+      function ingresoDia() {
+        let elemtRespuesta = document.getElementById("numeroDia");
+
+        let elementoDia = document.getElementById("numDia");
+        let dia = elementoDia.value;
+
+        switch (dia) {
+          case "1":
+            elemtRespuesta.textContent = "Lunes";
+            break;
+          case "2":
+            elemtRespuesta.textContent = "Martes";
+            break;
+          case "3":
+            elemtRespuesta.textContent = "Miercoles";
+            break;
+          case "4":
+            elemtRespuesta.textContent = "Jueves";
+            break;
+          case "5":
+            elemtRespuesta.textContent = "Viernes";
+            break;
+          default:
+            elemtRespuesta.textContent = "Es Fin de Semana";
+            break;
+        }
+      }
+    </script>
+  </body>
+</html>

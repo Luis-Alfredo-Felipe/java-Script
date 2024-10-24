@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Biografia</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container logo-nav-container">
+            <a href="https://www.facebook.com/profile.php?id=100010061447126&mibextid=ZbWKwL" target="_blank" class="link-logo">GENTI-LEZ@</a>
+            <span class="menu-icon">Ver Menu</span>
+            <nav class="navigation">
+                <ul class="show">
+                    <li><a href="#" class="link-Biografia">Biografia</a></li>
+                    <li><a href="#" class="link-Galeria">Fotos</a></li>
+                    <li><a href="#" class="link-Deportes">Equipo Favorito</a></li>
+                    <li><a href="#" class="link-Pasatiempos">Pasatiempos</a></li>
+                    <li><a href="#" class="link-Contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <img src="Gentileza.jpg" alt="Pagina">
+        <p><strong>GENTILEZA: Luis @lfredo Felipe Sic,</strong> es un apasionado de la programación, con experiencia trabajando en diversos lenguajes y herramientas como Python y Django. Le gusta resolver problemas lógicos y desarrollar soluciones eficientes, especialmente en áreas como la manipulación de XML y la implementación de cálculos automatizados. Además, disfruta experimentar con el diseño y la personalización visual de sus proyectos, buscando siempre mejorar la experiencia de usuario.
+        </p>
+        <div class="Listado">
+            <ul class="Atributos">
+                <li><a href="Altura"> <strong>Estatura:</strong> 1.50 Mts</li></a>
+                <li><a href="Deporte"><strong>Deporte:</strong>  Futbol</li></a>
+                <li><a href="Pasion"> <strong>Pasion:</strong> Programación</li></a>
+                <li><a href="Pasatiempos"><strong>Pasatiempos:</strong> Age Empires ll</li></a>
+                <li><a href="Hobbies"> <strong>Hobbies:</strong> Musica</li></a>
+            </ul>
+        </div>
+    </main>
+    
+    <section class="Biografia">
+        <h2>Mi Biografia</h2>
+        <p>Hola, soy <strong>Luis @lfredo,</strong> y me encanta la programación y los videojuegos. Mi deporte favorito es el fútbol y disfruto mucho de la música en mi tiempo libre.</p>
+        <ul class="Atrib">
+            <li><a href="Nacimiento"><strong>Fecha Nacimiento:</strong> 13 Septiembre</a></li>
+            <li><a href="Nacionalidad"><strong>Nacionalidad: </strong>Guatemalteco</a></li>
+            <li><a href="Profesion"><strong>Profesion: </strong>Bachiller en Ciencias y Letras</a></li>
+            <li><a href="Estudios"><strong>Nivel Academico: </strong>Cursando Ing. Sistemas</a></li>
+        </ul>
+    </section>
+    <!-- Sección de Galeria -->
+    <section class="Galeria">
+        <h2>Mis Imagenes</h2>
+        <div class="imagenes">
+            <img class="img1" src="Felipe.jpg" alt="Felipe">
+            <img class="img2" src="Luis.jpg" alt="Luis">
+            <img class="img3" src="Alfredo.jpg" alt="Alfredo">
+            <img class="img4" src="Planes.jpg" alt="Planes">
+            <img class="img5" src="Sumpango.jpg" alt="Sumpango">
+        </div>
+    </section>
+
+        <!-- Sección de Deportes -->
+        <section class="Deportes">
+            <h2>Mis Equipos Favoritos</h2>
+            <div class="imagenes">
+                <img class="img1" src="realMadrid.jpeg" alt="Mardrid">
+                <img class="img2" src="bernabeu.jpeg" alt="Bernabeu">
+                <img class="img3" src="champions.jpeg" alt="Uefa">
+                <img class="img4" src="riverPlate.jpeg" alt="River">
+                <img class="img5" src="monumental.jpeg" alt="Monumental">
+            </div>
+        </section>
+
+        <section class="Pasatiempos">
+            <h2>Mis Pasatiempos</h2>
+            <div class="imagenes">
+                <img class="img1" src="ageEmpires.png" alt="Mardrid">
+            </div>
+            <p>AGE EMPIRES ll:</p>
+        </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Visitanos en: <a href="https://www.facebook.com/profile.php?id=100010061447126&mibextid=ZbWKwL" target="_blank">genttilez@gmail.com</a></p>
+        </div>
+    </footer>
+    <!-- Seccion de Contacto -->
+    <section class="Contacto">
+    <form class="link-Contacto">
+    <div class="form-container">
+        <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required placeholder="Nombre">
+            <label for="telefono">Telefono</label>
+            <input type="number" name="telefono" required placeholder="Telefono">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="Correo Electronico">
+        </div>
+        <div class="textarea-group">
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required placeholder="Comentarios"></textarea>
+        </div>
+    </div>
+        <button type="submit">Enviar</button>
+    </form>
+    </section>    
+</body>
+</html>

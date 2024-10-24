@@ -1,0 +1,13 @@
+body{
+    background-color: #abb2c5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    font-weight: bolder;
+}
+
+button{
+    background-color: #000022;
+    color: white;
+}

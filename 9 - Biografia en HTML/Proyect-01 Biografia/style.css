@@ -1,0 +1,319 @@
+body{
+    font-family: Georgia, times, serif;
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    line-height: 1.6em;
+    margin: 10px;
+}
+
+.header .logo-nav-container a{
+  margin-left: 15px;  
+}
+
+.header .logo-nav-container a:hover{
+  background: #4a4a4a;
+  padding: 0.5rem 1rem;
+  transition: all 0.4s linear;
+  border-radius: 5px;
+}
+
+.header{
+    background: #333;
+    color: white;
+    padding: 2rem 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+.header a{
+    color: white;
+    text-decoration: none;
+}
+
+.logo-nav-container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.link-logo {
+    letter-spacing: 15px;
+    font-size: 1.3em;
+}
+
+.menu-icon{
+    display: none;
+
+}
+
+.navigation ul li{
+    display: inline-block;
+}
+
+.Listado .Atributos{
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.Listado .Atributos li{
+  text-decoration: none;
+  list-style: none;
+}
+
+.Listado .Atributos a{
+  text-decoration: none;
+  list-style: none;
+  color: #333;
+  font-size: 20px;
+}
+
+.Biografia ul li a{
+  list-style: none;
+  text-decoration: none;
+  color:  #333;
+  font-size: 20px;
+}
+
+.Biografia .Atrib {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.navigation ul li a{
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+}
+
+.navigation ul li a:hover{
+    background: #4a4a4a;
+}
+
+.main{
+    padding-top: 12rem;
+}
+
+.footer{
+    background: #f2f2f2;
+    padding: 4rem 0;
+    text-align: center;
+    margin-top: 15rem;
+}
+
+@media screen and (max-width: 767px) {
+.menu-icon{
+    display: block;
+    cursor: pointer;
+}
+
+.navigation ul li a{
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+}
+}
+
+.main{
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -100px;
+}
+
+/*Codigo de Leopardo*/
+.main-content{
+    margin-top: 150px;
+    text-align: justify;
+  }
+  
+  /* Estilos para categorías */
+  .categories-section {   
+    padding:  50px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .categories-section h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .categories-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px; /* Eliminar espacio entre filas y columnas */
+    justify-items: center;
+  }
+ 
+  /* Modo responsivo */
+@media (max-width: 1200px) {
+    .categories-section {
+      padding: 50px 100px;
+    }
+  
+    .categories-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .categories-section {
+      padding: 50px 50px;
+    }
+  
+    .categories-container {
+      grid-template-columns: 1fr;
+    }
+  }
+
+.main-content img{
+  width: 100px;
+  height: 100px;
+  padding-top: 5px;
+  margin-left: 3px;
+}
+
+.Biografia, .Galeria, .Contacto{
+  margin: 20px 0;
+}
+
+.Pasatiempos .imagenes img{
+  width: 1000px;
+  height: px;
+}
+
+.Deportes .imagenes{
+  width: 1000px;
+  height: 650px;
+  display: flex;
+  gap: 15px;
+  object-fit: cover;
+  transition: transform 0.4s ease, box-shadow 0.4s ease; /* Añade transición también a la sombra */
+}
+
+.Galeria .imagenes{
+  width: 1000px;
+  height: 430px;
+  display: flex;
+  gap: 15px; 
+  object-fit: cover;
+  transition: transform 0.4s ease, box-shadow 0.4s ease; /* Añade transición también a la sombra */
+}
+
+.img1:hover {
+  transform: scale(1.2) rotate(10deg) translateY(-10px); /* Amplía, rota y eleva ligeramente la imagen */
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.3); /* Añade una sombra suave */
+}
+.img2:hover{
+  transform: scale(1.2) rotate(10deg) translateY(-10px); /* Amplía, rota y eleva ligeramente la imagen */
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.3); /* Añade una sombra suave */
+}
+.img3:hover{
+  transform: scale(1.2) rotate(10deg) translateY(-10px); /* Amplía, rota y eleva ligeramente la imagen */
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.3); /* Añade una sombra suave */
+}
+.img4:hover{
+  transform: scale(1.2) rotate(10deg) translateY(-10px); /* Amplía, rota y eleva ligeramente la imagen */
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.3); /* Añade una sombra suave */
+}
+.img5:hover{
+  transform: scale(1.2) rotate(10deg) translateY(-10px); /* Amplía, rota y eleva ligeramente la imagen */
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.3); /* Añade una sombra suave */
+}
+
+.footer {
+  background-color: #656565; /* Color de fondo oscuro */
+  color: white; /* Texto blanco */
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: auto;
+}
+
+.footer a {
+  color: rgb(255, 255, 255); /* Color de enlace */
+  text-decoration: none;
+}
+
+.container .footer a:hover {
+  text-decoration: underline;
+  background: rgb(183, 255, 2);
+}
+
+h2{
+  background-color: #656565;
+  color: white;
+  height: 60px;
+  padding: 30px;
+
+}
+
+.Contacto{
+  background-color: #f5f5f5;
+  padding: 20px;
+  margin: 50px auto;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.link-Contacto{
+  display:flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+label{
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+input, textarea{
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+
+textarea{
+  margin-top: 15px;
+  min-height: 250px;
+}
+
+button{
+  padding: 10px;
+  background-color: #2F75B5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: backgroud-color 0.3s ease;
+  width: 100%;
+}
+
+button:hover{
+  background-color: #1e4d7d;
+}
+
+.form-container{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.form-group{
+  flex-basis: 45%;
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+}

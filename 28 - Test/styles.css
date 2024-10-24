@@ -1,0 +1,37 @@
+html{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    background-color: #eee;
+}
+
+button{
+    width: 180px;
+    height: 50px;
+    color: #0000ee;
+    display: block;
+    line-height: 35%;
+    font-weight: bolder;
+}
+
+p{
+    font-weight: bold;
+    font-style: italic;
+}
+
+input{
+    width: 180px;
+    height: 30px;
+}
+
+#cuentaRegresiva{
+    border: 1px;
+    border-color: red;
+    border-style: solid;
+    color: red;
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: coral;
+  }

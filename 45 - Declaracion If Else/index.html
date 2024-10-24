@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Declaracion If Else</title>
+    <script>
+        function evaluarCompra(){
+            let elementoRespuesta = document.getElementById("desicion");
+            let elementoPrecio = document.getElementById("textoPrecio");
+            let precio = elementoPrecio.value;
+
+            if(precio <5){
+                elementoRespuesta.textContent = "Comprar dos Cartones de Leche";
+            }else if(precio <8){
+                elementoRespuesta.textContent = "Comprar 1 Carton de Leche";
+            }else{
+                elementoRespuesta.textContent = "No Comprar Leche";
+            }
+        }
+    </script>
+</head>
+<body>
+    <p>Precio de la Leche</p>
+    <input type="number" id="textoPrecio">
+    <button onclick="evaluarCompra()">Enviar</button>
+    <h3 id="desicion"></h3>
+</body>
+</html>

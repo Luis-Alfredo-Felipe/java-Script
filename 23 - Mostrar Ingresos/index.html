@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostrar Ingresos</title>
+</head>
+<body>
+    <h1 class="saludo" id="saludo"></h1> <!-- Añadido id aquí -->
+    <script>
+        let nombre = prompt("¿Cuál es tu nombre?");
+        let salida = document.getElementById("saludo");
+        let mensaje = "Hola, " + nombre; // Corregido para incluir el nombre
+        salida.textContent = mensaje; // Asigna el mensaje al elemento h1
+    </script>    
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinadores en CSS</title>
+    <style>
+        div p{
+            color: blue;
+        }
+
+        ul > li{
+            color: green;
+        }
+
+        h1 + p{
+            color: red;
+        }
+        h1 ~ p {
+        font-weight: bold;
+    }
+
+    </style>
+</head>
+<body>
+    <div>
+        <p>Parrafo dentro de un div(combinador descendiente)</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea rem quaerat quae tenetur molestias harum doloribus. Voluptatem, perspiciatis nostrum perferendis dolorem molestiae quo eius ex aliquam optio porro cupiditate ad.</p>
+        <p>Itaque, consequuntur neque accusantium delectus ex esse culpa. Suscipit incidunt adipisci sit nesciunt, sequi consequuntur dolorum tempore modi! Rerum sint, molestiae quam nulla natus reiciendis ipsum quos tempora illo nam!</p>
+        <p>Impedit assumenda soluta asperiores facilis temporibus illum obcaecati labore facere voluptates non dignissimos porro exercitationem laborum atque recusandae fuga ipsum aut molestiae esse ducimus tempora quia dolore, cumque tenetur. Possimus.</p>
+        <p>Corrupti sint beatae totam dolorem laborum provident hic ducimus voluptatem officiis impedit tenetur libero, facere ratione ab facilis culpa et officia perferendis amet odit nesciunt asperiores dolor? Ipsa, velit reprehenderit!</p>
+        <p>Adipisci exercitationem architecto maxime eligendi eaque incidunt quod delectus quae accusantium commodi? Illum numquam eaque ducimus pariatur vel commodi nemo, nihil ipsum, nobis quisquam, consectetur debitis possimus facilis itaque veritatis?</p>\
+    </div>
+    <ul>
+        <li>Elemento Hijo Directo de UL</li>
+        <ol>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>Elemento 4</li>
+            <li>Elemento 5</li>
+            <li>Elemento 6</li>
+            <li>Elemento 7</li>
+        </ol>
+        <li>Otro hijo directo de UL</li>
+        <li>Ultimo Hijo directo de UL</li>
+    </ul>   
+    <h1>Encabezado</h1> 
+    <p>parrafo Adyacente al h1(Comibnador Adyacente)</p>
+    <p>Hermano del h1 (Combinador General)</p>
+</body>
+</html>
