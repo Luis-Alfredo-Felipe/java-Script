@@ -5,11 +5,7 @@ body{
     background-color: #e0e7c8;
 }
 
-h1{
-    font-size: 3rem;
-    color: rgb(200,75,25);
-    box-shadow: 0 0 25px #0a0a0a;
-}
+
 
 label, input{
     display: block;
@@ -22,4 +18,24 @@ button{
     height: 75px;
     width: 170px;
     margin-left: 10px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+}
+
+.header h1{
+    margin-right: 10px;
+}
+
+.header img{
+    height: 50px;
+}
+
+h1{
+    font-size: 3rem;
+    color: rgb(200,75,25);
+    box-shadow: 0 0 25px #0a0a0a;
+    width: 800px;
 }

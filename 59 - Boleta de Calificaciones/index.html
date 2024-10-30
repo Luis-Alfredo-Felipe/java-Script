@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Control de Calificaciones</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>Control de Calificaciones</h1>
+      <img src="list.png" alt="Listado" />
+    </div>
+    <label for="numAlunos">No. de Asignaturas:</label>
+    <input type="number" id="numAsignaturas" min="1" />
+    <button onclick="crearInputs()">Crear Entradas</button>
+    <div id="inputsContainer"></div>
+    <button id="calcularBtn" onclick="calcularPromedio()" style="display: none">
+      Calcular Promedios
+    </button>
+    <h2 id="resultado">----------</h2>
+
+    <script src="script.js"></script>
+  </body>
+</html>
