@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Informacion de la Persona</h1>
+    <div id="infoPersona"></div>
+    <button onclick="actualizarEdad()">Actualizar Edad</button>
+    <script>
+        const persona = {
+            nombre: "Ana",
+            edad: 25,
+            ciudad: "Madrid"
+        }
+        function mostrarInfo(){
+            document.getElementById("infoPersona").innerHTML=`
+            <p><strong>Nombre: ${persona.nombre}</strong></p>
+            <p><strong>Edad: ${persona.edad}</strong></p>
+            <p><strong>Ciudad: ${persona.ciudad}</strong></p>
+            `
+        }
+        function actualizarEdad(){
+            persona.edad +=1;
+            mostrarInfo();
+        }
+
+    </script>
+
+
+
+</body>
+</html>

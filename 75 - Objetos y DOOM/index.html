@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Informacion del Libro</h1>
+    <div id="infoLibro"></div>
+    <script>
+        const libro = {
+            titulo: "El Quijote",
+            autor: "Miguel de Cervantes",
+            año: 1605
+        }
+        document.getElementById("infoLibro").innerHTML = `<p><strong>Titulo:</strong> ${libro.titulo}<p><strong>Autor:</strong> ${libro.autor}</p>`
+    </script>
+</body>
+</html>
