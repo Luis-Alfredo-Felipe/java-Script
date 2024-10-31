@@ -1,7 +1,7 @@
-.menuInputMayor{
-    background-color: greenyellow;
+.producto{
+    margin-bottom: 20px;
 }
-
-.menuInputMenos{
-    background-color: lightsalmon;
+.total{
+    font-size: 20px;
+    color: green;
 }
