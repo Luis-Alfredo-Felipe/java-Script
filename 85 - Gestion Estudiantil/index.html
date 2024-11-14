@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion de Estudiantes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Sistema de Gestion de Estudiantes</h1>
+    </header>
+    <main>
+        <section class="formulario">
+            <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre">
+            <input type="number" name="edad" id="edad" placeholder="Escribe tu edad">
+            <input type="text"  name="curso" id="curso"  placeholder="Agrega un Curso">
+            <button onclick="agregarEstudiante()">Agregar Estudiantes</button>
+        </section>
+
+        <section>
+            <h2>Lista de Estudiantes</h2>
+            <div id="listaEstudiantes" class="Lista">
+            </div>
+        </section>
+
+    <script src="app.js"></script>
+    </main>
+</body>
+</html>

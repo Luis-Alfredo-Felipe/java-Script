@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function libro(autor, titulo, cantpaginas){
+            this.autor = autor;
+            this.titulo = titulo;
+            this.cantpaginas = cantpaginas;
+        }
+        let libro1 = new libro("stephtn link", "carrie", 524)
+        libro.prototype.abrirLibro = function (){
+            alert(this.titulo + ", Ha sido abiero");
+            
+        }
+    </script>
+</body>
+</html>

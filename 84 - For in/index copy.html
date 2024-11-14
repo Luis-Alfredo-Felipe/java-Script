@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Perro(raza, edad, color){
+            this.patas = 4;
+            this.raza = raza;
+            this.edad = edad;
+            this.color= color;
+            this.ladrar = function(){
+                console.log("Guaua");
+            }
+        }
+        let simba = new Perro("Shin Tzu", 4, "Marron");
+        let reina = new Perro("caniche", 15, "Blanco");
+        let batu = new Perro("Cruza", 8, "Negro");
+
+        for(let caracteristicas in simba){
+            console.log(caracteristicas +  ": " + )
+        }
+    </script>
+</body>
+</html>
