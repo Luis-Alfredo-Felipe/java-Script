@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Persona{
+            constructor(nombre, edad){
+                this.nombre = nombre;
+                this._edad = edad;
+            }
+            /*Getters para la edad*/
+            get edad(){
+                return this._edad;
+            }
+            /*Seter parra la edad*/
+            set edad(valor){
+                if(valor>0){
+                    this._edad = valor;
+                }else{
+                    console.log("La edad debe de ser un numero positivo");
+                }
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clases en JavaScript</title>
+</head>
+<body>
+    <script>
+        class Persona{
+            constructor(nombre, edad){
+                this.nombre = nombre;
+                this.edad = edad;
+            }
+            sludar(){
+                return `hola, ni nombre es ${this.nombre} y tengo ${this.edad} años}`;
+            }
+        }
+        let juan = new Persona("juan", 33);
+    </script>
+</body>
+</html>

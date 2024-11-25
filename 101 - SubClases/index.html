@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Vehiculo{
+            constructor(marca){
+            this.marca = marca;
+        }
+        arrancar(){
+            return `${this.marca} esta arrancando.`;
+        }
+    }
+    class Coche extends Vehiculo{
+        arrancar(){
+            return`${this.marca} esta arrancando como un Auto.`;
+        }
+    }
+    let miAuto = new Auto("Toyota");
+    </script>
+</body>
+</html>
