@@ -1,6 +1,6 @@
 class Animal{
     constructor(nombre){
-        this.nombre O nombre;
+        this.nombre = nombre;
     }
     sonido(){
         return `${this.nombre} hace un sonido`

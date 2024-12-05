@@ -11,6 +11,6 @@ class Persona{
 
 const persona = new Persona ("Ana",28);
 
-const infoDiv = document.getElementById("infoPersona");
+let infoDiv = document.getElementById("infoPersona");
 
-infoDiv.textContent = "Hola"
+infoDiv.textContent = persona.detalles();

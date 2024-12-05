@@ -14,6 +14,16 @@ let Automovil5 = new Automovil("Dodge","Camaro","Gris",2024,"Marcelo Torres")
 
 let automoviles = [Automovil1, Automovil2, Automovil3, Automovil4, Automovil5];
 
+function agregarAutomovil(){
+    let elementoMarca = document.getElementById("marca").value;
+    let elementoModelo = document.getElementById("modelo").value;
+    let elementoColor = document.getElementById("color").value;
+    let elementoAnio = document.getElementById("anio").value;
+    let elementoTitular = document.getElementById("titular").value;
+    let automovil = new Automovil(elementoMarca, elementoModelo, elementoColor, elementoAnio, elementoTitular);
+     automoviles.push(automovil);
+}
+
 Automovil.prototype.venderAutomovil = function(nuevoTitular){
     this.titular = new nuevoTitular;
 }

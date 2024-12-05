@@ -9,9 +9,13 @@
 </head>
 <body>
     <h1>Registro Automotor</h1>
-    <button onclick="mostrarAumotoviles()">Mostrar Automoviles</button>
-
-    <button onclick="agregarAutomoviles()">Agregar Automoviles</button>
+    <button onclick="mostrarAumotoviles()">Mostrar Automoviles</button><br>
+    <label for="marca"></label><input type="text" name="marca" id="marca">
+    <label for="modelo"></label><input type="text" name="modelo" id="modelo">
+    <label for="color"></label><input type="text" name="color" id="color">
+    <label for="anio"></label><input type="text" name="anio" id="anio">
+    <label for="titular"></label><input type="text" name="titular" id="titular">
+    <button onclick="agregarAutomovil()">Agregar Automovil</button>
     <ul id="listaAutomoviles"></ul>
 </body>
 </html>

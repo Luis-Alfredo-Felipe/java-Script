@@ -8,7 +8,7 @@ class Persona{
     }
     set edad(valor){
         if(valor > 0){
-            this._edad= valor;
+            this._edad = valor;
         }else{
             alert("La Edad Debe ser un Numero Positivo");
         }
@@ -19,8 +19,16 @@ class Persona{
     }
 }
 
-const persona = new Persona("Maria", 25);
+const persona = new Persona("Maria ", 25);
 
 function mostrarInfo(){
-    document.getElementById("infoPersona").textContent = persona.detalles;
+    document.getElementById("infoPersona").textContent = persona.detalles();
+}
+
+function actualizarEdad(){
+    const nuevaEdad = parseInt(prompt("Ingrese la nueva edad: "));
+    if(!isNaN(nuevaEdad)){
+        persona.edad = nuevaEdad;
+        mostrarInfo();
+    }
 }

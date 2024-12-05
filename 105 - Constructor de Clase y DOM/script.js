@@ -8,7 +8,7 @@ class Mascota{
     }
 }
 const mascotas = [];
-
+         registrarMascota
 function registrarMascota(){
     const nombre = document.getElementById("nombre").value;
     const  tipo = document.getElementById("tipo").value;
